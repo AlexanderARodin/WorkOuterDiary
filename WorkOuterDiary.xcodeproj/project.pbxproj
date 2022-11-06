@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		AF22B6BF2915AB9800268622 /* WorkOuterDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6AF2915AB9600268622 /* WorkOuterDiaryApp.swift */; };
 		AF22B6C02915AB9800268622 /* WorkOuterDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6AF2915AB9600268622 /* WorkOuterDiaryApp.swift */; };
-		AF22B6C12915AB9800268622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6B02915AB9600268622 /* ContentView.swift */; };
-		AF22B6C22915AB9800268622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6B02915AB9600268622 /* ContentView.swift */; };
 		AF22B6C32915AB9800268622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF22B6B12915AB9800268622 /* Assets.xcassets */; };
 		AF22B6C42915AB9800268622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF22B6B12915AB9800268622 /* Assets.xcassets */; };
+		AF22B6CE2915ABE800268622 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6CD2915ABE800268622 /* WorkoutsView.swift */; };
+		AF22B6CF2915ABE800268622 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6CD2915ABE800268622 /* WorkoutsView.swift */; };
+		AF22B6D12915AE2500268622 /* DataClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D02915AE2500268622 /* DataClosures.swift */; };
+		AF22B6D22915AE2500268622 /* DataClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D02915AE2500268622 /* DataClosures.swift */; };
+		AF22B6D42915B2AA00268622 /* NamedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D32915B2AA00268622 /* NamedIcon.swift */; };
+		AF22B6D52915B2AA00268622 /* NamedIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D32915B2AA00268622 /* NamedIcon.swift */; };
+		AF22B6D72916B34300268622 /* SubViewsForWorkOuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D62916B34300268622 /* SubViewsForWorkOuts.swift */; };
+		AF22B6D82916B34300268622 /* SubViewsForWorkOuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D62916B34300268622 /* SubViewsForWorkOuts.swift */; };
+		AF22B6DA2916E58700268622 /* WorkOutListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D92916E58700268622 /* WorkOutListItemView.swift */; };
+		AF22B6DB2916E58700268622 /* WorkOutListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22B6D92916E58700268622 /* WorkOutListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF22B6AF2915AB9600268622 /* WorkOuterDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOuterDiaryApp.swift; sourceTree = "<group>"; };
-		AF22B6B02915AB9600268622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF22B6B12915AB9800268622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF22B6B62915AB9800268622 /* WorkOuterDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOuterDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF22B6BC2915AB9800268622 /* WorkOuterDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOuterDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF22B6BE2915AB9800268622 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AF22B6CD2915ABE800268622 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		AF22B6D02915AE2500268622 /* DataClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClosures.swift; sourceTree = "<group>"; };
+		AF22B6D32915B2AA00268622 /* NamedIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedIcon.swift; sourceTree = "<group>"; };
+		AF22B6D62916B34300268622 /* SubViewsForWorkOuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewsForWorkOuts.swift; sourceTree = "<group>"; };
+		AF22B6D92916E58700268622 /* WorkOutListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				AF22B6AF2915AB9600268622 /* WorkOuterDiaryApp.swift */,
-				AF22B6B02915AB9600268622 /* ContentView.swift */,
+				AF22B6CD2915ABE800268622 /* WorkoutsView.swift */,
+				AF22B6D62916B34300268622 /* SubViewsForWorkOuts.swift */,
+				AF22B6D92916E58700268622 /* WorkOutListItemView.swift */,
+				AF22B6D32915B2AA00268622 /* NamedIcon.swift */,
+				AF22B6D02915AE2500268622 /* DataClosures.swift */,
 				AF22B6B12915AB9800268622 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF22B6C12915AB9800268622 /* ContentView.swift in Sources */,
+				AF22B6D72916B34300268622 /* SubViewsForWorkOuts.swift in Sources */,
+				AF22B6CE2915ABE800268622 /* WorkoutsView.swift in Sources */,
+				AF22B6D42915B2AA00268622 /* NamedIcon.swift in Sources */,
 				AF22B6BF2915AB9800268622 /* WorkOuterDiaryApp.swift in Sources */,
+				AF22B6D12915AE2500268622 /* DataClosures.swift in Sources */,
+				AF22B6DA2916E58700268622 /* WorkOutListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF22B6C22915AB9800268622 /* ContentView.swift in Sources */,
+				AF22B6D82916B34300268622 /* SubViewsForWorkOuts.swift in Sources */,
+				AF22B6CF2915ABE800268622 /* WorkoutsView.swift in Sources */,
+				AF22B6D52915B2AA00268622 /* NamedIcon.swift in Sources */,
 				AF22B6C02915AB9800268622 /* WorkOuterDiaryApp.swift in Sources */,
+				AF22B6D22915AE2500268622 /* DataClosures.swift in Sources */,
+				AF22B6DB2916E58700268622 /* WorkOutListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

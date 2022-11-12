@@ -11,7 +11,7 @@ import SwiftUI
 struct WorkOuterDiaryApp: App {
 	var body: some Scene {
 		WindowGroup {
-			WorkoutsView()
+			StartView()
 		}
 	}
 }

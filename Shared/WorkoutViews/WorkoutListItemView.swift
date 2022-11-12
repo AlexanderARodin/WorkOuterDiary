@@ -11,16 +11,14 @@ import SwiftUI
 struct WorkoutListItemView: View {
 	
 	let workout:WorkOut
-	@State private var selection: UUID?
 	@Environment(\.editMode) private var editMode
 	
 	var body: some View {
-			NavigationLink(
-				tag: workout.id,
-				selection: $selection,
-				destination: {WorkoutDetailView(workout: workout)},
-				label: {listLabel}
-			)
+		NavigationLink {
+			WorkoutDetailView(workout: workout)
+		} label: {
+			listLabel2
+		}
 	}
 	
 	var listLabel: some View {
@@ -40,6 +38,28 @@ struct WorkoutListItemView: View {
 			Divider()
 			TimeBox(workout.startTime)
 			TimeBox(workout.endTime)
+		}
+	}
+	var listLabel2: some View {
+		HStack(alignment: .center, spacing: 5) {
+			VStack(alignment: .leading) {
+				Text("\(workout.type)")
+					.font(.headline)
+				if editMode?.wrappedValue.isEditing != true {
+					Text("\(workout.details)")
+						.fontWeight(.ultraLight)
+						.font(.footnote)
+				}
+			}
+			Spacer()
+			Divider()
+			VStack(alignment: .leading) {
+				DateBox2(workout.startTime)
+				HStack {
+					TimeBox(workout.startTime)
+					TimeBox(workout.endTime)
+				}
+			}
 		}
 	}
 }

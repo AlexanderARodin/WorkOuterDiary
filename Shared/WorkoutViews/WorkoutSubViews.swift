@@ -39,6 +39,39 @@ struct DateBox: View {
 	}
 }
 
+struct DateBox2: View {
+	let day: String
+	let month: String
+	let year: String
+	
+	init(_ date: Date) {
+		day = date.formatted(.dateTime.day(.twoDigits) )
+		month = date.formatted(.dateTime.month(.abbreviated) )
+		year = date.formatted(.dateTime.year(.extended()) )
+	}
+	
+	var body: some View {
+		HStack {
+			Text("\(day).\(month)")
+				.font(.footnote)
+				.fontWeight(.bold)
+			Text("\(year)")
+				.font(.footnote)
+				.fontWeight(.ultraLight)
+		}
+		.padding(5)
+		.overlay(
+			RoundedRectangle(cornerRadius: 15)
+				.stroke(.gray, lineWidth: 3)
+		)
+		.scaleEffect(x:0.70, y:0.75)
+		.fixedSize()
+		.frame(width: 45)
+	}
+}
+
+
+
 struct TimeBox: View {
 	let hourAndMinute: String
 	

@@ -12,6 +12,7 @@ struct WorkoutListItemView: View {
 	
 	let workout:WorkOut
 	@State private var selection: UUID?
+	@Environment(\.editMode) private var editMode
 	
 	var body: some View {
 			NavigationLink(
@@ -29,9 +30,11 @@ struct WorkoutListItemView: View {
 			VStack(alignment: .leading) {
 				Text("\(workout.type)")
 					.font(.headline)
-				Text("\(workout.details)")
-					.fontWeight(.ultraLight)
-					.font(.footnote)
+				if editMode?.wrappedValue.isEditing != true {
+					Text("\(workout.details)")
+						.fontWeight(.ultraLight)
+						.font(.footnote)
+				}
 			}
 			Spacer()
 			Divider()

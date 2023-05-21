@@ -1,2 +1,2 @@
 # WorkOuterDiary
-pet-project for real tracking gym workouts.
+pet-project for real tracking gym workouts..
